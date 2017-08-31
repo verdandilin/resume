@@ -11,8 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/colorbox.css" />
+		<!-- <link rel="stylesheet" href="assets/css/colorbox.css" /> -->
 		<link rel="stylesheet" href="assets/css/fotorama.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body id="top">
@@ -59,38 +60,68 @@
 						<h2>UI Design</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./uiWeb.html" class="ColorBoxTagger image fit thumb ColorBoxScollar" ><img src="./images/02_03_syntron_web/ui_synDriverWeb_main.png" alt="" style=""/></a>
+								<a data-fancybox data-src="#uiWeb" href="javascript:;"  class="image fit thumb" ><img src="./images/02_03_syntron_web/ui_synDriverWeb_main.png" alt=""/></a>
 								<h3>SynDriver web</h3>
+								<div style="display: none; width:80%;" id="uiWeb">
+							        <div data-nav="thumbs">
+							        	<img src="./images/02_03_syntron_web/ui_syndriverWeb_full.jpg" width="100%">
+    								</div>
+    							</div>
 								<p></p>
 							</article>
 
 						    <article class="6u$ 12u$(xsmall) work-item">
-								<a href="./uiChatbot.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_04_chatbot/ui_mackup_expired_main.jpg" alt="" /></a>
+								<a data-fancybox data-src="#uiChatbot" href="javascript:;"  class="image fit thumb" ><img src="./images/02_04_chatbot/ui_mackup_expired_main.jpg" alt="" /></a>
 								<h3>Makeup Expired Chatbot</h3>
+								<div style="display: none; width:80%;" id="uiChatbot">
+							        <div data-nav="thumbs">
+							          <img src="./images/02_04_chatbot/ui_mackup_expired_full.jpg" width="100%">
+							        </div>
+    							</div>
 								<p></p>
 						    </article>
 
 						    <article class="6u 12u$(xsmall) work-item">
-								<a href="./uiSkin.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_05_skin/ui_SkinExam_main.jpg" alt="" /></a>
+								<a data-fancybox data-src="#uiSkin" href="javascript:;" class="image fit thumb" ><img src="./images/02_05_skin/ui_SkinExam_main.jpg" alt="" /></a>
 								<h3>Skin Examination</h3>
+								<div style="display: none; width:80%;" id="uiSkin">
+							        <div data-nav="thumbs">
+							          <img src="./images/02_05_skin/ui_SkinExam_full.jpg" width="100%">
+							        </div>
+    							</div>
 								<p></p>
 						    </article>
 
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="./uiSyncare.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_06_syncare/ui_syncare_main.jpg" alt="" /></a>
+								<a data-fancybox data-src="#uiSkin" href="javascript:;" class="image fit thumb" ><img src="./images/02_06_syncare/ui_syncare_main.jpg" alt="" /></a>
 								<h3>SynCare</h3>
+								<div style="display: none; width:80%;" id="uiSyncare">
+							        <div data-nav="thumbs">
+							          <img src="./images/02_06_syncare/ui_syncare_full.jpg" width="100%">
+							        </div>
+    							</div>
 								<p></p>
 							</article>
 
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./uiRecipt.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_01_recipt/ui_recipt_main.jpg" alt="" /></a>
+								<a data-fancybox data-src="#uiRecipt" href="javascript:;" class="image fit thumb" ><img src="./images/02_01_recipt/ui_recipt_main.jpg" alt="" /></a>
 								<h3>Lohas Life</h3>
+								<div style="display: none; width:80%;" id="uiRecipt">
+							        <div data-nav="thumbs">
+							          <img src="./images/02_01_recipt/ui_recipe_full_1.jpg" width="100%">
+							        </div>
+    							</div>
 								<p></p>
 							</article>
 
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="./uiCamera.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_02_camera/ui_camera_main.png" alt="" /></a>
+								<a data-fancybox data-src="#uiCamera" href="javascript:;" class="image fit thumb" ><img src="./images/02_02_camera/ui_camera_main.png" alt="" /></a>
 								<h3>Lohas Camera</h3>
+								<div style="display: none; width:80%;" id="uiCamera">
+							        <div data-nav="thumbs">
+							          <img src="./images/02_02_camera/ui_camera_full_1.jpg" width="100%">
+							        </div>
+    							</div>
 								<p></p>
 							</article>
 
@@ -103,33 +134,73 @@
 						<h2 id="reW1">Package Design</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./teeth.html" class="ColorBoxTagger image fit thumb" ><img src="./images/01_package/01_teeth/pa_teeth_main.jpg" alt="" /></a>
+								<a data-fancybox="teeth" href="./images/01_package/01_teeth/pa_teeth_full_6.jpg" class="image fit thumb" >
+									<img src="./images/01_package/01_teeth/pa_teeth_main.jpg" alt="" />
+								</a>
 								<h3>齒時齒刻</h3>
+								<div style="display: none;">
+									<a href="./images/01_package/01_teeth/pa_teeth_full_5.jpg" data-fancybox="teeth"> </a>
+									<a href="./images/01_package/01_teeth/pa_teeth_full_4.jpg" data-fancybox="teeth"> </a>
+									<a href="./images/01_package/01_teeth/pa_teeth_full_3.jpg" data-fancybox="teeth"> </a>
+									<a href="./images/01_package/01_teeth/pa_teeth_full_2.jpg" data-fancybox="teeth"> </a>
+									<a href="./images/01_package/01_teeth/pa_teeth_full_1.jpg" data-fancybox="teeth"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./pizzaPPP.html" class="ColorBoxTagger image fit thumb" ><img src="./images/02_pizza_hut/pa_ppp_main.png" alt="" /></a>
+								<a data-fancybox="pizzaPPP" href="./images/02_pizza_hut/pa_ppp_full_01.png" class="image fit thumb" >
+									<img src="./images/02_pizza_hut/pa_ppp_main.png" alt="" />
+								</a>
 								<h3>Pizza Hut - Personal Pizza Box Design</h3>
+								<div style="display: none;">
+									<a href="./images/02_pizza_hut/pa_ppp_full_02.png" data-fancybox="pizzaPPP"> </a>
+									<a href="./images/02_pizza_hut/pa_ppp_full_03.png" data-fancybox="pizzaPPP"> </a>
+									<a href="./images/02_pizza_hut/pa_ppp_full_04.png" data-fancybox="pizzaPPP"> </a>
+									<a href="./images/02_pizza_hut/pa_ppp_full_05.png" data-fancybox="pizzaPPP"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./CoffeePackage.html" class="ColorBoxTagger image fit thumb" ><img src="./images/03_coffee_package/pa_coffee_main_1.jpg" alt="" /></a>
+								<a data-fancybox="CoffeePackage" href="./images/03_coffee_package/pa_coffee_full_1.jpg" class="image fit thumb" >
+									<img src="./images/03_coffee_package/pa_coffee_main_1.jpg" alt="" /></a>
 								<h3>Coffee Package re-design</h3>
+								<div style="display: none;">
+									<a href="./images/03_coffee_package/pa_coffee_full_2.jpg" data-fancybox="CoffeePackage"> </a>
+									<a href="./images/03_coffee_package/pa_coffee_full_3.jpg" data-fancybox="CoffeePackage"> </a>
+									<a href="./images/03_coffee_package/pa_coffee_full_4.jpg" data-fancybox="CoffeePackage"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./TeaPackage.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_tea_package/pa_tea_main_1.jpg" alt="" /></a>
+								<a data-fancybox="TeaPackage" href="./images/04_tea_package/pa_tea_full_1.jpg" class="image fit thumb" >
+									<img src="./images/04_tea_package/pa_tea_main_1.jpg" alt="" /></a>
 								<h3>Tea Package re-design</h3>
+								<div style="display: none;">
+									<a href="./images/04_tea_package/pa_tea_full_2.jpg" data-fancybox="TeaPackage"> </a>
+									<a href="./images/04_tea_package/pa_tea_full_3.jpg" data-fancybox="TeaPackage"> </a>
+									<a href="./images/04_tea_package/pa_tea_full_4.jpg" data-fancybox="TeaPackage"> </a>
+									<a href="./images/04_tea_package/pa_tea_full_5.jpg" data-fancybox="TeaPackage"> </a>
+									<a href="./images/04_tea_package/pa_tea_full_6.jpg" data-fancybox="TeaPackage"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./cerPackage.html" class="ColorBoxTagger image fit thumb" ><img src="./images/05_in_hand/pa_cer_main.png" alt="" /></a>
+								<a data-fancybox="cerPackage" href="./images/05_in_hand/pa_cer_full_01.jpg" class="image fit thumb" >
+									<img src="./images/05_in_hand/pa_cer_main.png" alt="" /></a>
 								<h3>Ceramics Package</h3>
+								<div style="display: none;">
+									<a href="./images/05_in_hand/pa_cer_full_02.jpg" data-fancybox="cerPackage"> </a>
+									<a href="./images/05_in_hand/pa_cer_full_03.jpg" data-fancybox="cerPackage"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./breadPackage.html" class="ColorBoxTagger image fit thumb" ><img src="./images/06_bread/pa_bread_01.png" alt="" /></a>
+								<a data-fancybox="breadPackage" href="./images/06_bread/pa_bread_full_01.png" class="image fit thumb" >
+									<img src="./images/06_bread/pa_bread_01.png" alt="" /></a>
 								<h3>統一麵包展示架</h3>
+								<div style="display: none;">
+									<a href="./images/06_bread/pa_bread_full_02.png" data-fancybox="breadPackage"> </a>
+    							</div>
 								<p></p>
 							</article>
 						</div>
@@ -141,18 +212,30 @@
 						<h2>Logo Design</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./CIPizzaHut30th.html" class="ColorBoxTagger image fit thumb" ><img src="./images/03_01_pizza_30th_logo/ci_ph_main.png" alt="" /></a>
+								<a data-fancybox="CIPizzaHut30th" href="./images/03_01_pizza_30th_logo/ci_ph_full_01.png" class="image fit thumb" >
+									<img src="./images/03_01_pizza_30th_logo/ci_ph_main.png" alt="" /></a>
 								<h3>Pizza Hut 30th anniversary</h3>
+								<div style="display: none;">
+									<a href="./images/03_01_pizza_30th_logo/ci_ph_full_02.png" data-fancybox="CIPizzaHut30th"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="./CIBeef.html" class="ColorBoxTagger image fit thumb" ><img src="./images/03_02_BeefNoodle/CI_beef_main.png" alt="" /></a>
+								<a data-fancybox="CIBeef" href="./images/03_02_BeefNoodle/CI_beef_full_01.png" class="image fit thumb" >
+									<img src="./images/03_02_BeefNoodle/CI_beef_main.png" alt="" /></a>
 								<h3>三角圓</h3>
+								<div style="display: none;">
+									<a href="./images/03_02_BeefNoodle/CI_beef_full_02.png" data-fancybox="CIBeef"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./CIswim.html" class="ColorBoxTagger image fit thumb" ><img src="./images/03_04_swim/logo_main.jpg" alt="" /></a>
+								<a data-fancybox="CIswim" href="./images/03_04_swim/CI_logo_01_full.jpg" class="image fit thumb" >
+									<img src="./images/03_04_swim/logo_main.jpg" alt="" /></a>
 								<h3>Swim Logo</h3>
+								<div style="display: none;">
+									<a href="./images/03_04_swim/CI_logo_02_full.jpg" data-fancybox="CIswim"> </a>
+    							</div>
 								<p></p>
 							</article>
 							
@@ -164,13 +247,23 @@
 						<h2 id="reW1">Pizza Hut</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADPizzaHutLeaflet.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_01_pizza_hut_leaflet/ph_main.png" alt="" /></a>
+								<a data-fancybox="ADPizzaHutLeaflet" href="./images/04_01_pizza_hut_leaflet/ph_full_01.png" class="image fit thumb" >
+									<img src="./images/04_01_pizza_hut_leaflet/ph_main.png" alt="" /></a>
 								<h3>Pizza Hut</h3>
+								<div style="display: none;">
+									<a href="./images/04_01_pizza_hut_leaflet/ph_full_02.png" data-fancybox="ADPizzaHutLeaflet"> </a>
+									<a href="./images/04_01_pizza_hut_leaflet/ph_full_03.png" data-fancybox="ADPizzaHutLeaflet"> </a>
+									<a href="./images/04_01_pizza_hut_leaflet/ph_full_04.png" data-fancybox="ADPizzaHutLeaflet"> </a>
+									<a href="./images/04_01_pizza_hut_leaflet/ph_full_06.png" data-fancybox="ADPizzaHutLeaflet"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADPizzaHutSeafood.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_06_pizza_hut_leaflet/ph_main.png" alt="" /></a>
+								<a data-fancybox="ADPizzaHutSeafood" href="./images/04_06_pizza_hut_leaflet/ph_full.png" class="image fit thumb" >
+									<img src="./images/04_06_pizza_hut_leaflet/ph_main.png" alt="" /></a>
 								<h3>Pizza Hut</h3>
+								<div style="display: none;">
+    							</div>
 								<p></p>
 							</article>
 							
@@ -182,17 +275,20 @@
 						<div class="row">
 							
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADEsteeLauderANR.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_07_ESTEE_LAUDER_ANR/ADEsteeLauder_ANR_main.png" alt="" /></a>
+								<a data-fancybox="ADEsteeLauderANR" href="./images/04_07_ESTEE_LAUDER_ANR/ADEsteeLauder_ANR_full.png" class="image fit thumb" >
+									<img src="./images/04_07_ESTEE_LAUDER_ANR/ADEsteeLauder_ANR_main.png" alt="" /></a>
 								<h3>ESTEE LAUDER ANR</h3>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADEsteeLauderLips.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_08_ESTEE_LAUDER_lips/ADEsteeLauder_lips_main.png" alt="" /></a>
+								<a data-fancybox="ADEsteeLauderLips" href="./images/04_08_ESTEE_LAUDER_lips/ADEsteeLauder_lips_full.png" class="image fit thumb" >
+									<img src="./images/04_08_ESTEE_LAUDER_lips/ADEsteeLauder_lips_main.png" alt="" /></a>
 								<h3>ESTEE LAUDER Pure Color Envy</h3>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADEsteeLauderMasking.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_09_ESTEE_LAUDER_mask_night/ADEsteeLauder.png" alt="" /></a>
+								<a data-fancybox="ADEsteeLauderMasking" href="./images/04_09_ESTEE_LAUDER_mask_night/ADEsteeLauder_full.png" class="image fit thumb" >
+									<img src="./images/04_09_ESTEE_LAUDER_mask_night/ADEsteeLauder.png" alt="" /></a>
 								<h3>ESTEE LAUDER Re-Nutriv</h3>
 								<p></p>
 							</article>
@@ -206,18 +302,30 @@
 						<div class="row">
 							
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADLohasApp.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_03_lohas/ad_lohas_main.jpg" alt="" /></a>
+								<a data-fancybox="ADLohasApp" href="./images/04_03_lohas/ad_lohas_full_1.jpg" class="image fit thumb" >
+									<img src="./images/04_03_lohas/ad_lohas_main.jpg" alt="" /></a>
 								<h3>Lohas App</h3>
+								<div style="display: none;">
+									<a href="./images/04_03_lohas/ad_lohas_full_2.jpg" data-fancybox="ADLohasApp"> </a>
+									<a href="./images/04_03_lohas/ad_lohas_full_3.jpg" data-fancybox="ADLohasApp"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADUbike.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_04_ubike/ad_ubike_main.jpg" alt="" /></a>
+								<a data-fancybox="ADUbike" href="./images/04_04_ubike/ad_ubike_full.jpg" class="image fit thumb" >
+									<img src="./images/04_04_ubike/ad_ubike_main.jpg" alt="" /></a>
 								<h3>Ubike</h3>
+								<div style="display: none;">
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./ADNewBalance.html" class="ColorBoxTagger image fit thumb" ><img src="./images/04_05_new balance/ad_nb_main.jpg" alt="" /></a>
+								<a data-fancybox="ADNewBalance" href="./images/04_05_new balance/ad_nb_full_1.jpg" class="image fit thumb" >
+									<img src="./images/04_05_new balance/ad_nb_main.jpg" alt="" /></a>
 								<h3>New Balance</h3>
+								<div style="display: none;">
+									<a href="./images/04_05_new balance/ad_nb_full_2.jpg" data-fancybox="ADNewBalance"> </a>
+    							</div>
 								<p></p>
 							</article>
 							
@@ -229,13 +337,24 @@
 						<h2 id="reW1">Editorial</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="./edWhale.html" class="ColorBoxTagger image fit thumb" ><img src="./images/05_01_whale/ED_whale_main.png" alt="" /></a>
+								<a data-fancybox="edWhale" href="./images/05_01_whale/ED_whale_full_01.png" class="image fit thumb" >
+									<img src="./images/05_01_whale/ED_whale_main.png" alt="" /></a>
 								<h3>52 Hertz</h3>
+								<div style="display: none;">
+									<a href="./images/05_01_whale/ED_whale_full_02.png" data-fancybox="edWhale"> </a>
+									<a href="./images/05_01_whale/ED_whale_full_03.png" data-fancybox="edWhale"> </a>
+    							</div>
 								<p></p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="./edResume.html" class="ColorBoxTagger image fit thumb" ><img src="./images/05_02_resume/ED_resume_main.png" alt="" /></a>
+								<a data-fancybox="edResume" href="./images/05_02_resume/ED_resume_full_01.png" class="image fit thumb" >
+									<img src="./images/05_02_resume/ED_resume_main.png" alt="" /></a>
 								<h3>portfolio</h3>
+								<div style="display: none;">
+									<a href="./images/05_02_resume/ED_resume_full_02.png" data-fancybox="edResume"> </a>
+									<a href="./images/05_02_resume/ED_resume_full_03.png" data-fancybox="edResume"> </a>
+									<a href="./images/05_02_resume/ED_resume_full_04.png" data-fancybox="edResume"> </a>
+    							</div>
 								<p></p>
 							</article>
 							
@@ -268,11 +387,12 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
     		<script type="text/javascript" src="assets/js/jssor.slider.mini.js"></script>
-    		<script src="assets/js/jquery.colorbox-min.js"></script>
+    		<script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    		<!-- <script src="assets/js/jquery.colorbox-min.js"></script> -->
     		<script src="assets/js/fotorama.js"></script>
     		<script>
 		        jQuery(document).ready(function ($) {
-		        	$("a.ColorBoxTagger").colorbox({iframe:true, innerWidth:'600', innerHeight:'434'});
+		        	// $("a.ColorBoxTagger").colorbox({iframe:true, innerWidth:'600', innerHeight:'434'});
 		            var jssor_1_options = {
 		              $AutoPlay: true,
 		              $ArrowNavigatorOptions: {
